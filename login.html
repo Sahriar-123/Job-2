@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login / Register</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="container mt-5">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb bg-secondary p-3 rounded">
+<li class="breadcrumb-item"><a class="text-warning fw-bold" href="./index.html">Home</a></li>
+<li class="breadcrumb-item active text-white fw-bold">Login</li>
+</ol>
+</nav>
+
+<div class="row justify-content-center mt-5">
+<div class="col-md-6">
+
+<div class="card bg-gradient-dark text-light border-info shadow-lg rounded-4">
+
+<div class="card-header text-center bg-gradient-info text-dark rounded-top-4">
+<h4 class="fw-bold">Welcome Back</h4>
+<p class="mb-0">Login to access your dashboard</p>
+</div>
+
+<div class="card-body">
+
+<div class="tab-content">
+
+<div class="tab-pane fade show active" id="login">
+
+<form onsubmit="event.preventDefault(); alert('Login Successful!');">
+
+<div class="mb-3">
+<label class="fw-semibold">Email</label>
+<input required type="email" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="your email">
+</div>
+
+<div class="mb-3">
+<label class="fw-semibold">Password</label>
+<input required type="password" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="your password">
+</div>
+
+<button type="submit" class="btn btn-info fw-bold w-100 rounded-pill">Login</button>
+
+</form>
+
+</div>
+
+<p class="text-center mt-4 fs-6 text-muted">Or create a new account</p>
+
+<div class="text-center">
+<a href="./register.html"><button class="btn btn-outline-info btn-lg px-5 fw-bold rounded-pill">Register</button></a>
+</div>
+
+<div class="tab-pane fade" id="register">
+
+<form onsubmit="event.preventDefault(); alert('Registration Successful!');">
+
+<div class="mb-3">
+<label class="fw-semibold">Full Name</label>
+<input required type="text" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="Full Name">
+</div>
+
+<div class="mb-3">
+<label class="fw-semibold">Email</label>
+<input required type="email" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="Email">
+</div>
+
+<div class="mb-3">
+<label class="fw-semibold">Password</label>
+<input required type="password" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="Password">
+</div>
+
+<div class="mb-3">
+<label class="fw-semibold">Confirm Password</label>
+<input required type="password" class="form-control bg-secondary text-light border-light rounded-pill" placeholder="Confirm Password">
+</div>
+
+<button type="submit" class="btn btn-outline-info fw-bold w-100 rounded-pill">Register</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
